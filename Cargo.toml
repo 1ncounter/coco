@@ -7,8 +7,13 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-chrono = "0.4" # time format
+# time format
+chrono = "0.4"
+
 git2 = "0.13"
+
+# for cli usage
+clap = "2.33.3"
 
 # for git clone
 tempdir = "0.3"
@@ -16,9 +21,13 @@ tempdir = "0.3"
 # parse for url
 url = "2.2.0"
 
+# cloc
+tokei = "12.1.2"
+
 # serializing and deserializing
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
+serde_yaml = "0.8" # for config parse
 
 [workspace]
 members = [
